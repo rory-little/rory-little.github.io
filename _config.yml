@@ -17,3 +17,5 @@ social:
 sass:
   sass_dir: _sass
 
+markdown: kramdown
+
