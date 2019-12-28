@@ -22,14 +22,21 @@
   margin: 0 auto;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  img {
+    border-radius: 50%;
+    width: 250px;
+    height: auto;
+  }
   .site-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
     font-size: 50px;
     display: block;
     line-height: 1;
     color: #FFF;
     @media only screen and (min-width:$cut){
       margin: 0;
-      font-size: 76px;
+      font-size: 90px;
     }
   }
   .site-description {

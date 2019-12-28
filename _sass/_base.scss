@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Raleway');
-@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Josefin+Slab|Antic+Slab');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300');
+@import url('https://fonts.googleapis.com/css?family=Inria+Serif');
+@import url('https://fonts.googleapis.com/css?family=Inria+Serif:300');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100');
 
 * {
     -webkit-font-smoothing: antialiased;
@@ -13,8 +15,8 @@ body {
     line-height: 1.5;
     color: #555;
 
-    font-family: 'Antic Slab', serif;
-    font-weight: 400;
+    font-family: 'Inria Serif', serif;
+    font-weight: 300;
 }
 article, aside, figcaption, figure, footer, header, nav, section {
     display: block;

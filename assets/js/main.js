@@ -2,6 +2,8 @@
 document.addEventListener("DOMContentLoaded", function () {
   const sweetScroll = new SweetScroll({/* some options */});
 
+  const bgOpacity = 0.5;
+
   /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
   particlesJS('particles-js', {
     "particles": {
@@ -31,10 +33,10 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       },
       "opacity": {
-        "value": 1,
+        "value": bgOpacity,
         "random": true,
         "anim": {
-          "enable": true,
+          "enable": false,
           "speed": 1,
           "opacity_min": 0,
           "sync": false
@@ -54,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "enable": true,
         "distance": 150,
         "color": "#ffffff",
-        "opacity": 0.4,
+        "opacity": 0.4 * bgOpacity,
         "width": 1
       },
       "move": {
@@ -89,7 +91,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "grab": {
           "distance": 400,
           "line_linked": {
-            "opacity": 1
+            "opacity": bgOpacity
           }
         },
         "bubble": {
