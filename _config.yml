@@ -1,14 +1,14 @@
 # Site settings
 title: Rory Little
 description: Jekyll Theme Minimal Resume
-# baseurl: "" # the subpath of your site, e.g. /blog
-url: "oneinten.dev" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+url: "oneinten.dev"
 
 # User settings
-username: Rory Little
-user_description: Check out my blog, it's flippin' gnarly - <a href="https://oneorten.dev/blog" target="_blank">https://onorten.dev/blog</a>
-user_title: Software Engineer
-email: rorylit@gmail.com
+user:
+  name: Rory Little
+  title: Software Engineer
+  email: rorylit@gmail.com
+
 social:
   twitter: _rorylittle
   github: idlys

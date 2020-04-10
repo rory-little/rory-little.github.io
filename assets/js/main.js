@@ -79,11 +79,11 @@ document.addEventListener("DOMContentLoaded", function () {
       "events": {
         "onhover": {
           "enable": false,
-          "mode": "bubble"
+          "mode": "repulse"
         },
         "onclick": {
           "enable": false,
-          "mode": "grab"
+          "mode": "push"
         },
         "resize": true
       },

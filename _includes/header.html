@@ -2,11 +2,11 @@
   <div class="header">
     <!-- <img src="assets/other_headshot.jpg" /> -->
     <h1>
-      <span class="site-title">{{ site.username }}</span>
-      <span class="site-description">{{ site.user_title }}</span>
+      <span class="site-title">{{ site.user.name }}</span>
+      <span class="site-description">{{ site.user.title }}</span>
     </h1>
     <div class="header-icons">
-      <a aria-label="Send email" href="mailto:{{ site.email }}"><i class="icon fa fa-envelope"></i></a>
+      <a aria-label="Send email" href="mailto:{{ site.user.email }}"><i class="icon fa fa-envelope"></i></a>
       <a aria-label="My LinkedIn" target="_blank" href="https://www.linkedin.com/in/{{ site.social.linkedin }}"><i class="icon fa fa-linkedin-square" aria-hidden="true"></i></a>
       <a aria-label="My Github" target="_blank" href="https://github.com/{{ site.social.github }}"><i class="icon fa fa-github" aria-hidden="true"></i></a>
     </div>

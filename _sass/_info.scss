@@ -1,0 +1,71 @@
+#about {
+  padding-bottom: 50px;
+}
+
+#projects {
+  background: $main;
+  padding: 20px;
+  padding-bottom: 50px;
+}
+
+.content {
+  width: 90%;
+  max-width: 960px;
+  @media only screen and (min-width: $cut) {
+    width: 80%;
+  }
+
+  svg {
+    width: 60px !important;
+    height: auto;
+  }
+
+  font-size: 120%;
+  text-align: center;
+  margin: 5px auto;
+
+  h1 {
+    font-weight: 400;
+  }
+
+  #headshot {
+    float: left;
+    border-radius: 50%;
+    width: 300px;
+    height: auto;
+    padding: 30px;
+  }
+}
+
+.inverted {
+  h1, h2, h3, p {
+    color: #FFF;
+  }
+}
+
+.project {
+  margin: 10px;
+  flex: 1 1 0;
+  h2, h3 {
+    font-weight: 400;
+  }
+}
+
+.project-list {
+  text-align: center;
+  font-size: 60px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media only screen and (min-width: $cut) {
+    flex-wrap: nowrap;
+    font-size: 75px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
