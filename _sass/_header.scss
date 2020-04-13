@@ -1,11 +1,6 @@
 #particles-js {
-  background: $main;
-  display: flex;
+  background-color: $main;
   vertical-align: bottom;
-  min-height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
   .particles-js-canvas-el {
     height: 100vh !important;
   }

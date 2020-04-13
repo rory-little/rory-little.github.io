@@ -1,0 +1,61 @@
+<div id="particles-js" class="home-section">
+  <div class="header">
+    <!-- <img src="assets/other_headshot.jpg" /> -->
+    <h1>
+      <span class="site-title">{{ site.user.name }}</span>
+      <span class="site-description">{{ site.user.title }}</span>
+    </h1>
+    <div class="header-icons">
+      <a aria-label="Send email" href="mailto:{{ site.user.email }}"><i class="icon fa fa-envelope"></i></a>
+      <a aria-label="My LinkedIn" target="_blank" href="https://www.linkedin.com/in/{{ site.social.linkedin }}"><i class="icon fa fa-linkedin-square" aria-hidden="true"></i></a>
+      <a aria-label="My Github" target="_blank" href="https://github.com/{{ site.social.github }}"><i class="icon fa fa-github" aria-hidden="true"></i></a>
+    </div>
+    <div class="header-links">
+      <a class="link" href="#about" data-scroll>About Me</a>
+      <a class="link" href="#projects" data-scroll>My Projects</a>
+      <a class="link" href="#cv" data-scroll>Resume</a>
+      <a class="link" href="#blog" data-scroll>Blog</a>
+    </div>
+  </div>
+  <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
+</div>
+
+<section id="about" class="home-section">
+  <div class="content">
+    <img id="headshot" src="{{ '/assets/images/headshot.jpg' | relative_url }}" />
+    <h1>About Me</h1>
+    <p>
+      Hi, I'm Rory - a 23 year old student of Computer Science and Mathematics at Western Washington University.
+      I am most interested in discrete mathematics and applications to computer science, in fields such as automata, graph theory, and enumerative combinatorics.
+      I also have a passion for programming language theory, having worked on several languages and compilers throughout university.
+      In my spare time, I write music.
+    </p>
+  </div>
+</section>
+
+<section id="projects" class="home-section">
+  <div class="content inverted">
+    <h1>Projects</h1>
+    <div class="project-list">
+      <div class="project">
+        <h2>Muze</h2>
+        <p>
+          Muse is an imperative, statically-typed, compiled programming language being developed at Western Washington University.
+        </p>
+      </div>
+      <div class="project">
+        <h2>TBD</h2>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="cv" class="home-section">
+  <div class="content">
+    <h1>Resume</h1>
+    <p>
+      My resume may be seen <a target="_blank" href="{{ '/assets/' | relative_url }}">here (PDF)</a>.
+    </p>
+  </div>
+</section>
+
+
