@@ -1,9 +1,9 @@
-<div id="particles-js" class="home-section">
+<div id="particles-js" class="card">
   <div class="header">
     <!-- <img src="assets/other_headshot.jpg" /> -->
     <h1>
-      <span class="site-title">{{ site.user.name }}</span>
-      <span class="site-description">{{ site.user.title }}</span>
+      <span class="user-name">{{ site.user.name }}</span>
+      <span class="user-title">{{ site.user.title }}</span>
     </h1>
     <div class="header-icons">
       <a aria-label="Send email" href="mailto:{{ site.user.email }}"><i class="icon fa fa-envelope"></i></a>
@@ -20,7 +20,7 @@
   <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
 </div>
 
-<section id="about" class="home-section">
+<section id="about" class="card">
   <div class="content">
     <img id="headshot" src="{{ '/assets/images/headshot.jpg' | relative_url }}" />
     <h1>About Me</h1>
@@ -31,9 +31,10 @@
       In my spare time, I write music.
     </p>
   </div>
+  <a class="down" href="#projects" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
 </section>
 
-<section id="projects" class="home-section">
+<section id="projects" class="card">
   <div class="content inverted">
     <h1>Projects</h1>
     <div class="project-list">
@@ -48,8 +49,10 @@
       </div>
     </div>
   </div>
+  <a class="down" href="#cv" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
 </section>
-<section id="cv" class="home-section">
+
+<section id="cv" class="card">
   <div class="content">
     <h1>Resume</h1>
     <p>
