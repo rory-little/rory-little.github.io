@@ -1,0 +1,15 @@
+#cv {
+  h3 {
+    display: block;
+    text-align: left;
+
+    .cv-epoch {
+      float: right;
+    }
+
+    .cv-info {
+      display: block;
+      font-weight: 400;
+    }
+  }
+}

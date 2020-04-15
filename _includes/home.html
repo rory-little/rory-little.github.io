@@ -22,14 +22,16 @@
 
 <section id="about" class="card">
   <div class="content">
-    <img id="headshot" src="{{ '/assets/images/headshot.jpg' | relative_url }}" />
-    <h1>About Me</h1>
-    <p>
-      Hi, I'm Rory - a 23 year old student of Computer Science and Mathematics at Western Washington University.
-      I am most interested in discrete mathematics and applications to computer science, in fields such as automata, graph theory, and enumerative combinatorics.
-      I also have a passion for programming language theory, having worked on several languages and compilers throughout university.
-      In my spare time, I write music.
-    </p>
+    <div>
+      <img id="headshot" src="{{ '/assets/images/headshot.jpg' | relative_url }}" />
+      <h1>About Me</h1>
+      <p>
+        Hi, I'm Rory - a 23 year old student of Computer Science and Mathematics at Western Washington University.
+        I am most interested in discrete mathematics and applications to computer science, in fields such as automata, graph theory, and enumerative combinatorics.
+        I also have a passion for programming language theory, having worked on several languages and compilers throughout university.
+        In my spare time, I write music.
+      </p>
+    </div>
   </div>
   <a class="down" href="#projects" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
 </section>
@@ -55,9 +57,49 @@
 <section id="cv" class="card">
   <div class="content">
     <h1>Resume</h1>
-    <p>
-      My resume may be seen <a target="_blank" href="{{ '/assets/' | relative_url }}">here (PDF)</a>.
-    </p>
+
+    <div id="cv-education" class="cv-section">
+      <h2>Education</h2>
+
+      <div class="cv-item">
+        <h3>
+          Western Washington University
+          <span class="cv-epoch">June, 2020</span>
+          <span class="cv-info">Computer Science, BS</span>
+          <span class="cv-info">Mathematics, BS</span>
+        </h3>
+      </div>
+    </div>
+
+    <div id="cv-experience" class="cv-section">
+      <h2>Experience</h2>
+
+      <div class="cv-item">
+        <h3>
+          Undergraduate Research Assistant
+          <span class="cv-epoch">April, 2019 - March, 2020</span>
+          <span class="cv-info">Western Washington University</span>
+        </h3>
+      </div>
+
+      <div class="cv-item">
+        <h3>
+          Teaching Assistant
+          <span class="cv-epoch">September, 2019 - March, 2020</span>
+          <span class="cv-info">Western Washington University</span>
+        </h3>
+      </div>
+
+      <div class="cv-item">
+        <h3>
+          Full Stack Intern
+          <span class="cv-epoch">June, 2015 - December 2015</span>
+          <span class="cv-info">Unikrn</span>
+        </h3>
+      </div>
+
+    </div>
+
   </div>
 </section>
 

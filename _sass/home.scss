@@ -5,123 +5,27 @@
 @import 'base';
 @import 'vars';
 @import 'animation';
-@import 'info';
 @import 'footer';
+
+@import "home/header";
+@import "home/about";
+@import "home/cv";
+
+h1 {
+  font-weight: 400;
+}
 
 .card {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 0;
 
   min-height: 100vh;
-  max-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-}
-
-.header {
-  flex: 1;
-  z-index: 1;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  font-family: 'Montserrat', sans-serif;
-  text-align: center;
-  color:#FFF;
-
-  .user-name {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 100;
-    font-size: 50px;
-    display: block;
-    line-height: 1;
-    color: #FFF;
-    @media only screen and (min-width:$cut){
-      margin: 0;
-      font-size: 90px;
-    }
-  }
-
-  .user-title {
-    font-size: 20px;
-    display: block;
-    line-height: 1;
-    color: #FFF;
-    margin-top: 10px;
-    @media only screen and (min-width:$cut){
-      font-size: 34px;
-    }
-  }
-}
-
-#particles-js {
-  background-color: $main;
-
-  .particles-js-canvas-el {
-    position: absolute;
-  }
-}
-
-.header-links {
-  margin: 10px;
-  .link {
-    color: #FFF;
-    text-decoration: none;
-    font-size: 15px;
-    margin: 10px;
-    @media only screen and (min-width:$cut){
-      font-size: 20px;
-    }
-  }
-}
-
-.header-icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  text-align: center;
-  a {
-    // no borders
-    outline: 0 !important;
-    border: none !important;
-    outline-style: none !important;
-    -moz-outline-style: none !important;
-
-    padding: none;
-    margin: none;
-  }
-  .icon {
-    text-align: center;
-    color: #FFF;
-    width: 20px;
-    height: 20px;
-    font-size: 20px;
-    padding: 10px;
-    margin: 5px;
-    border-radius: 50%;
-    border: 2px solid #FFF;
-    transition: all .5s;
-    &:hover {
-      color: $main;
-      background: #FFF;
-    }
-    &:active {
-      color: $main;
-      background: #FFF;
-    }
-    @media only screen and (min-width:$cut) {
-      width: 30px;
-      height: 30px;
-      font-size: 30px;
-      line-height: 30px;
-    }
-  }
 }
 
 .down {
@@ -155,6 +59,62 @@
     height: 100px;
     fill: #fff;
     animation: pulse 1.3s infinite;
+  }
+}
+
+.content {
+  flex: 1;
+
+  width: 90%;
+  max-width: 960px;
+  @media only screen and (min-width: $cut) {
+    width: 80%;
+  }
+
+  svg {
+    width: 60px !important;
+    height: auto;
+  }
+
+  text-align: center;
+  margin: 5px auto;
+
+
+}
+
+#projects {
+  background: $main;
+}
+
+.inverted {
+  h1, h2, h3, p {
+    color: #FFF;
+  }
+}
+
+.project {
+  margin: 10px;
+  flex: 1 1 0;
+  h2, h3 {
+    font-weight: 400;
+  }
+}
+
+.project-list {
+  text-align: center;
+  font-size: 60px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media only screen and (min-width: $cut) {
+    flex-wrap: nowrap;
+    font-size: 75px;
+  }
+
+  p {
+    font-size: 16px;
   }
 }
 
