@@ -1,0 +1,24 @@
+@import "lib/normalize";
+@import "lib/fontawesome";
+@import "lib/devicon";
+
+@import 'base';
+@import 'vars';
+@import 'footer';
+
+@import "blog/header";
+@import "blog/post_list";
+
+.content-container {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  width: 90%;
+  max-width: 960px;
+}
+

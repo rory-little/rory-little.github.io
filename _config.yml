@@ -3,6 +3,8 @@ title: Rory Little
 description: Rory Little's website and blog
 url: "oneorten.dev"
 
+permalink: /blog/:title/
+
 # User settings
 user:
   name: Rory Little

@@ -37,7 +37,7 @@
 }
 
 #particles-js {
-  background-color: $main;
+  background-color: $dark-bg;
 
   .particles-js-canvas-el {
     position: absolute;
@@ -85,11 +85,11 @@
     border: 2px solid #FFF;
     transition: all .5s;
     &:hover {
-      color: $main;
+      color: $dark-bg;
       background: #FFF;
     }
     &:active {
-      color: $main;
+      color: $dark-bg;
       background: #FFF;
     }
     @media only screen and (min-width:$cut) {

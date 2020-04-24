@@ -1,0 +1,30 @@
+.header {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+
+  background: $dark-bg;
+
+  .header-items {
+    width: 90%;
+    max-width: 960px;
+
+    display: flex;
+    justify-content: flex-start;
+
+    a {
+      margin: 10px;
+      outline: 0 !important;
+      text-decoration: none;
+
+      color: $dark-fg;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 20px;
+
+      &:visited {
+        color: $dark-fg;
+      }
+    }
+  }
+}
