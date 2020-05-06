@@ -15,6 +15,16 @@
 
   a {
     display: block;
+    text-decoration: none;
+    padding: 10px;
+
+    &:hover {
+      background: #eee;
+    }
+
+    &:visited p {
+      color: $light-fg;
+    }
   }
 }
 

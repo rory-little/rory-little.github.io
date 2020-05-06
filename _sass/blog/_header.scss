@@ -18,12 +18,13 @@
       outline: 0 !important;
       text-decoration: none;
 
-      color: $dark-fg;
+      color: $dark-strong;
       font-family: 'Montserrat', sans-serif;
       font-size: 20px;
+      font-weight: 300;
 
       &:visited {
-        color: $dark-fg;
+        color: $dark-strong;
       }
     }
   }

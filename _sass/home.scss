@@ -33,7 +33,7 @@ h1 {
   margin: 0 auto;
   z-index: 1;
 
-  color: #FFF;
+  color: $light-fg;
   display: block;
   cursor: pointer;
 
@@ -87,8 +87,12 @@ h1 {
 }
 
 .inverted {
-  h1, h2, h3, p {
-    color: #FFF;
+  p, .down {
+    color: $dark-fg;
+  }
+
+  h1, h2, h3 {
+    color: $dark-strong;
   }
 }
 

@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100');
 @import url('https://fonts.googleapis.com/css?family=Inria+Serif');
 @import url('https://fonts.googleapis.com/css?family=Inria+Serif:300');
-@import url('https://fonts.googleapis.com/css?family=Montserrat:100');
 
 * {
     -webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -13,42 +13,54 @@ body {
     padding: 0;
     font-size: 100%;
     line-height: 1.5;
-    color: #555;
+
+    color: $light-fg;
 
     font-family: 'Inria Serif', serif;
     font-weight: 300;
 }
+
 article, aside, figcaption, figure, footer, header, nav, section {
     display: block;
 }
+
 h1, h2, h3, h4, strong {
     margin-top: 1em;
     padding-top: 1em;
     line-height: 1.25;
-    color: #333;
+    color: $light-strong;
 }
+
 h1 {
     font-size: 2.5rem;
 }
+
 h2 {
     font-size: 2rem;
 }
+
 h3 {
     font-size: 1.5rem;
 }
+
 h4 {
     font-size: 1rem;
 }
+
 ul, ol {
     margin: 1em 0;
     padding-left: 40px;
 }
+
 p, figure {
     margin: 1em 0;
 }
+
 a img {
     border: none;
 }
+
 sup, sub {
     line-height: 0;
 }
+
