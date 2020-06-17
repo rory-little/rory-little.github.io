@@ -3,6 +3,8 @@ title: "Crafting Cellular Automata in Rust (Part 1)"
 layout: blog
 ---
 
+![automaton]({{ 'assets/blog/automata_rust_1/header.png' | relative_url }}){: class="centered" }
+
 In this series, we will explore cellular automata, both in theory and implementation.
 We will begin by building a simple automaton in Rust, and then later iterate on that design in subsequent posts.
 In the process, we will discuss various aspects of cellular automata, and how we might generalize our implementation to any automaton.
