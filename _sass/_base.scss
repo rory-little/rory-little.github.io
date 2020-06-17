@@ -64,3 +64,13 @@ sup, sub {
     line-height: 0;
 }
 
+dl {
+  dt {
+    font-style: italic;
+  }
+
+  dd {
+    padding-bottom: 10px;
+  }
+}
+

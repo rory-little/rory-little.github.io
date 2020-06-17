@@ -1,0 +1,86 @@
+$_background: #1d1f21;
+$_foreground: #c5c8c6;
+$_black:      #282a2e;
+$_red:        #a54242;
+$_green:      #8c9440;
+$_yellow:     #de935f;
+$_blue:       #5f819d;
+$_magenta:    #85678f;
+$_cyan:       #5e8d87;
+$_white:      #707880;
+$_b_black:      #373b41;
+$_b_red:        #cc6666;
+$_b_green:      #b5bd68;
+$_b_yellow:     #f0c674;
+$_b_blue:       #81a2be;
+$_b_magenta:    #b294bb;
+$_b_cyan:       #8abeb7;
+$_b_white:      #c5c8c6;
+
+p > code {
+  background: #eee;
+  border-radius: 3px;
+  padding: 0 5px 0 5px;
+}
+
+.highlight {
+  padding: 10px;
+  background: $_background;
+  color: $_foreground;
+  border-radius: 7px;
+  margin: 0;
+
+// Bad rust tokenizer ruins this
+//  .err {
+//    background: $_red;
+//  }
+
+  .k, .kc, .kd, .kn, .kp, .kr, .kt, .bp {
+    color: $_yellow;
+  }
+
+  .n, .nb, .nx, .nt, .nn, .nv, .vc, .vi, .ss {
+    color: $_blue;
+  }
+
+  .nc, .ne {
+    color: $_magenta;
+  }
+
+  .na, .py, .nl, .si, .sx {
+    color: $_green;
+  }
+
+  .no, .vg {
+    color: $_green;
+    font-style: italic;
+  }
+
+  .nd, .ni {
+    color: $_b_red;
+  }
+
+  .nf {
+    color: $_cyan;
+  }
+
+  .l, .ld, .o, .ow, .p {
+  }
+
+  .m, .mf, .mh, .mi, .il, .mo, .mx, .mb {
+    color: $_green;
+  }
+
+  .s, .sb, .sc, .sd, .s1, .s2, .sh, .sr {
+    color: $_red;
+  }
+
+  .se {
+    color: $_b_yellow;
+  }
+
+  .c, .cm, .cp, .c1, .cs {
+    color: $_white;
+  }
+}
+

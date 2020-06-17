@@ -8,6 +8,8 @@
 
 @import "blog/header";
 @import "blog/post_list";
+@import "blog/classes";
+@import "blog/code";
 
 .content-container {
   width: 100%;
@@ -22,5 +24,6 @@
   width: 90%;
   max-width: 960px;
   text-align: justify;
+  font-size: 14pt;
 }
 
