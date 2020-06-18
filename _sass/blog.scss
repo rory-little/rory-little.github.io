@@ -23,7 +23,10 @@
 .content {
   width: 90%;
   max-width: 960px;
-  text-align: justify;
+
+  p {
+    text-align: justify;
+  }
   font-size: 14pt;
 }
 
