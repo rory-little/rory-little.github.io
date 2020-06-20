@@ -3,8 +3,6 @@ title: "Crafting Cellular Automata in Rust (Part 1)"
 layout: blog
 ---
 
-![automaton]({{ 'assets/blog/automata_rust_1/header.png' | relative_url }}){: class="centered" }
-
 In this series, we will explore cellular automata, both in theory and implementation.
 We will begin by building a simple automaton in Rust, and then later iterate on that design in subsequent posts.
 In the process, we will discuss various aspects of cellular automata, and how we might generalize our implementation to any automaton.
@@ -202,13 +200,25 @@ Unfortunately, we live in a world where not all functions are pure, state exists
 As such, we need to write some *imperative* code to implement our beautiful iterators.
 Avert your eyes if you must, I know I would.
 
+We will use our `step()` function as a guideline for what we need here.
+Since we call `into_iter()` on a `Forest`, it seems clear that we should implement some sort of iterator for a forest.
+
 ``` rust
 struct ForestIterator {
     forest: Forest,
     x: usize,
     y: usize
 }
+```
 
+However, what does this iterator spit out?
+A naive guess might be that it yields `ForestState`s, because it seems the obvious choice.
+However, think about our transition function.
+What are we mapping in `update`?
+Rather than iterating over every *cell*, we need to actually iterate over every *neighborhood* in the forest.
+The implementation then follows.
+
+``` rust
 impl Iterator for ForestIterator {
     type Item = Neighborhood;
 
@@ -254,7 +264,17 @@ impl IntoIterator for Forest {
         }
     }
 }
+```
 
+Note that I did make an important choice in this implementation: what type of state lies in cells not stored in a `Forest`.
+See how we initialized every cell in the neighborhood to `Ground` before filling it in as we can with values from the `Forest`?
+Here is where we decide that all cells not tracked by our `Forest` will be considered `Ground`, since we cannot fill in cells that are not tracked.
+
+Now, we have one last thing to complete: building our forest back from an iterator when we `collect()` it.
+This is much simpler than the last step.
+We will go from left to right, top to bottom filling in cells in our `Forest`, as this is the ordering in which we made our `ForestIterator` yield neighborhoods earlier.
+
+``` rust
 use std::iter::FromIterator;
 
 impl FromIterator<ForestState> for Forest {
@@ -286,7 +306,10 @@ impl FromIterator<ForestState> for Forest {
 ### Generating and displaying a forest
 
 As a last step before running the automaton, we need to write some utility functions for generating and displaying a forest.
-These are relatively simple.
+We will use the `rand` crate for our generation, so remember to add it as a dependency.
+Here, we define the distribution of states across all the cells.
+I suggest that you play around with this distribution after running the automaton to see how different types of forest might respond to a fire.
+Here, we just generate a forest where the ground and all sizes of trees have an equal chance of spawning.
 
 ``` rust
 extern crate rand;
@@ -300,7 +323,13 @@ impl Distribution<ForestState> for Standard {
         }
     }
 }
+```
 
+We also would like to *see* what we have created.
+Implementing `Display` for our forest allows us to draw it to the terminal easily.
+You can play around with this, too.
+
+``` rust
 use std::fmt;
 
 impl fmt::Display for Forest {
@@ -333,7 +362,8 @@ impl fmt::Display for Forest {
 ### Running the automaton
 
 Finally, we are able to use our automaton.
-I added some ANSI escape magic to make it display better in the terminal.
+I will add some terminal escape sequences to make it display better.
+All that these will do are clear the screen, hide the cursor, and reset the cursor to the top left of the screen before drawing the forest.
 
 ``` rust
 use std::{time, thread};
@@ -341,18 +371,18 @@ use std::{time, thread};
 fn main() {
     let mut rng = rand::thread_rng();
 
-    print!("{}[2J", 0x1b as char);
-    print!("{}[?25l", 0x1b as char);
+    print!("\x1b[2J\x1b[?25l");
 
     // Grow the forest
-    let mut forest: Forest = rng.sample_iter(Standard).take(LENGTH * WIDTH).collect();
+    let mut forest: Forest = rng.sample_iter(Standard)
+                                .take(LENGTH * WIDTH).collect();
 
     // Light a fire
     forest.0[rng.gen_range(0, WIDTH)][rng.gen_range(0, LENGTH)] = Fire(5);
 
     // Watch it burn
     loop {
-        print!("{}[;H", 0x1b as char);
+        print!("\x1b[;H");
 
         println!("{}", forest);
         forest = step(forest);
@@ -363,8 +393,11 @@ fn main() {
 ```
 
 We finally have created our automaton, let's take it for a run!
-If you're copying this code, don't worry if your cursor disappears.
-Just run `bash -c 'echo -e "\033[?25h"'` and you'll have it back.
+Since we are hiding the cursor, and we no way to exit the program but with a `SIGINT` (the thing that `ctrl+c` does), we need to manually show the cursor *after* the interrupt.
+We could either handle the signal in our rust code, which gets messy, *or* we could just use the shell to do this.
+Since using the shell is easier, we'll just run our program with `trap 'printf "%b[?25h" "\033"' INT && cargo run`.
+
+And... **behold!**
 
 <video autoplay loop muted class="centered">
   <source src="{{ "assets/blog/automata_rust_1/final.webm" | relative_url }}" type="video/webm">
@@ -385,4 +418,9 @@ If we wanted to use an automaton to generate the forest before simulating a fire
 There are several ways that automata can be sped up, but our approach is too abstracted to make much use of them.
 
 We will explore an approach that tries to address these issues in the [next post]().
+
+---
+
+All code in this post may be found [on GitHub]().
+Thank you for reading!
 
