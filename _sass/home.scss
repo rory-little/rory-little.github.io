@@ -10,6 +10,7 @@
 @import "home/header";
 @import "home/about";
 @import "home/cv";
+@import "home/projects";
 
 h1 {
   font-weight: 400;
@@ -82,10 +83,6 @@ h1 {
 
 }
 
-#projects {
-  background: $dark-bg;
-}
-
 .inverted {
   p, .down {
     color: $dark-fg;
@@ -93,32 +90,6 @@ h1 {
 
   h1, h2, h3 {
     color: $dark-strong;
-  }
-}
-
-.project {
-  margin: 10px;
-  flex: 1 1 0;
-  h2, h3 {
-    font-weight: 400;
-  }
-}
-
-.project-list {
-  text-align: center;
-  font-size: 60px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-
-  @media only screen and (min-width: $cut) {
-    flex-wrap: nowrap;
-    font-size: 75px;
-  }
-
-  p {
-    font-size: 16px;
   }
 }
 

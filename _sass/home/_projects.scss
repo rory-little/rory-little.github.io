@@ -1,0 +1,57 @@
+#projects {
+  background: $dark-bg;
+}
+
+.project {
+  position: relative;
+  margin: 10px;
+  flex: 1 1 0;
+  h2, h3 {
+    font-weight: 400;
+  }
+}
+
+.project-list {
+  text-align: center;
+  font-size: 60px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media only screen and (min-width: $cut) {
+    flex-wrap: nowrap;
+    font-size: 75px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+#muze-bg {
+  float: left;
+  background-image:
+      radial-gradient(circle at 200%, transparent, transparent 90%, $dark-bg 95%, $dark-bg),
+      radial-gradient(circle at top 200% left 50%, transparent, transparent 90%, $dark-bg 95%, $dark-bg),
+      radial-gradient(circle at bottom 200% left 50%, transparent, transparent 90%, $dark-bg 95%, $dark-bg),
+      radial-gradient(circle at 30%, transparent, transparent 50%, $dark-bg 70%),
+      url("/assets/images/muze.png");
+  width: 400px;
+  height: 400px;
+  background-size: 400px auto;
+}
+
+#multimeter-bg {
+  float: right;
+  background-image:
+      radial-gradient(circle at -100%, transparent, transparent 90%, $dark-bg 95%, $dark-bg),
+      radial-gradient(circle at top 200% left 50%, transparent, transparent 90%, $dark-bg 95%, $dark-bg),
+      radial-gradient(circle at bottom 200% left 50%, transparent, transparent 90%, $dark-bg 95%, $dark-bg),
+      radial-gradient(circle at 70%, transparent, transparent 50%, $dark-bg 70%),
+      url("/assets/images/multimeter.jpg");
+  width: 400px;
+  height: 400px;
+  background-size: 400px auto;
+}
+
