@@ -39,7 +39,9 @@
       url("/assets/images/muze.png");
   width: 400px;
   height: 400px;
-  background-size: 400px auto;
+  max-width: 100vw;
+  max-height: 100vw;
+  background-size: contain;
 }
 
 #multimeter-bg {
@@ -52,6 +54,8 @@
       url("/assets/images/multimeter.jpg");
   width: 400px;
   height: 400px;
+  max-width: 100vw;
+  max-height: 100vw;
   background-size: 400px auto;
 }
 
