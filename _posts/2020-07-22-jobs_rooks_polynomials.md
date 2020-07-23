@@ -111,9 +111,11 @@ Faye, Elliott, Lee, and Maria are also looking for jobs, and have also applied t
   </figcaption>
 </figure>
 
+<div></div>
+
 - Faye has applied to the front end developer position, as well as a full stack position.
 
-- Elliot has applied to the AI developer and compiler engineer positions.
+- Elliott has applied to the AI developer and compiler engineer positions.
 
 - Lee has applied to just the AI developer position.
 
@@ -142,7 +144,8 @@ We will call this chessboard $$B$$.
 In a perfect world, we would assume that everyone would coordinate to maximize the number of hirings.
 In this case, we would ask for the number of ways to place the maximum possible number of rooks on this board.
 However, it is not a perfect world - sometimes jobs close, people pull themselves off the market, and competing jobs poach each others' choices.
-As such, we instead need to count every possible hiring permutation, and so our question becomes "how many ways can we place any number of rooks on this board?".
+As such, we instead need to count every possible hiring permutation - that is, counting every case which could even be considered remotely possible, including a case where nobody is hired at all.
+So, our question becomes "how many ways can we place any number of rooks on this board?".
 
 However, now we need to find a way to deal with these "darkened" spaces.
 
@@ -151,7 +154,7 @@ However, now we need to find a way to deal with these "darkened" spaces.
 ## Polynomials
 
 When dealing with permutations of various indistinct items (rooks), a common combinatorial tool is to encode the problem in a polynomial, called a [generating function](https://en.wikipedia.org/wiki/Generating_function).
-That is, we change from a question of "how many $$n$$ are there?" to "what is the coefficient of of $$x^n$$ in the polynomial $$P(x)$$?"
+That is, we change from a question of "how many $$n$$ are there?" to "what is the coefficient of $$x^n$$ in the polynomial $$P(x)$$?".
 In this case, we will introduce a function $$R(B, x)$$ which yields the "rook polynomial" for our board, $$B$$.
 
 So, what do we get from using polynomials to encode our problem?
@@ -213,7 +216,7 @@ $$
   R(B_1, x) = 1 + 4x + 2x^2
 $$
 
-We can similarly easily perform the counts for $$B_2$$, and arrive at the second rook polynomial
+We can similarly easily perform the counts for $$B_2$$, and arrive at the second rook polynomial:
 
 $$
   R(B_2, x) = 1 + 5x + 4x^2
@@ -235,8 +238,7 @@ $$
   \end{align*}
 $$
 
-Now we have calculated
-
+We now have a way to derive our larger polynomial from the two smaller ones!
 This is, of course, still ignoring those two outlying white squares.
 How about we deal with those now?
 
@@ -350,7 +352,8 @@ We are now equipped with all of the tools that we need to construct the polynomi
   </figure>
 </div>
 
-So, we have finally reached our desired rook polynomial, $$R(B, x)$$, now we need to return to our original problem statement: counting ways to distribute jobs.
+So, we have finally reached our desired rook polynomial, $$R(B, x)$$.
+Now we need to return to our original problem statement - counting ways to distribute jobs.
 
 
 ## Distributing jobs
