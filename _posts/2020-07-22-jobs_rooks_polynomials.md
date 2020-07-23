@@ -419,7 +419,7 @@ $$
 $$
 
 
-## Conclusions
+## The answer (for the rest of us)
 
 What we have created here is a model of the job market.
 It is limited in the fact that it cannot assign weights to certain people to be favored in one job over another, and it counts all scenarios equally.
