@@ -54,13 +54,13 @@ For a rook to be non-attacking, these areas must be clear of any other pieces.
 
 <div class="centered" style="display:flex !important; flex-wrap: wrap">
   <figure>
-    <img src="/assets/blog/jobs_rook_polynomials/two_attacking.svg" />
+    <img src="/assets/blog/jobs_rooks_polynomials/two_attacking.svg" />
     <figcaption>
       Two attacking rooks
     </figcaption>
   </figure>
   <figure>
-    <img src="/assets/blog/jobs_rook_polynomials/two_non_attacking.svg" />
+    <img src="/assets/blog/jobs_rooks_polynomials/two_non_attacking.svg" />
     <figcaption>
       Two non-attacking rooks
     </figcaption>
@@ -105,7 +105,7 @@ Unfortunately for John, he is not alone.
 Faye, Elliott, Lee, and Maria are also looking for jobs, and have also applied to some of these jobs.
 
 <figure class="right">
-  <img src="/assets/blog/jobs_rook_polynomials/john_with_others.svg" />
+  <img src="/assets/blog/jobs_rooks_polynomials/john_with_others.svg" />
   <figcaption>
     A way to visualize various job applications
   </figcaption>
@@ -130,12 +130,12 @@ What happens when a person is hired for a position?
 Well, not only do they celebrate with take out pizza, a glass of champagne, and a few too many Oreo cookies, but they also remove themselves and the job from the market.
 For example, if Elliott were to be hired as an AI developer, we would oberve the following change to the chart.
 
-<img src="/assets/blog/jobs_rook_polynomials/elliot_hired.svg" class="centered"/>
+<img src="/assets/blog/jobs_rooks_polynomials/elliot_hired.svg" class="centered"/>
 
 Hmm, this pattern seems familiar.
 Might we have seen something similar before?
 
-<img src="/assets/blog/jobs_rook_polynomials/elliot_hired_rooks.svg" class="left"/>
+<img src="/assets/blog/jobs_rooks_polynomials/elliot_hired_rooks.svg" class="left"/>
 
 As it turns out, match people with jobs reduces easily to the same problem of placing rooks on a chessboard!
 As such, we can rephrase our question of "how many ways can jobs be distributed" into something involving the placement of rooks on this board.
@@ -172,7 +172,7 @@ We can then swap any two rows or columns of the board as many times as we need, 
 We have used this property here to transform $$B$$ into a board with two isolated corners of valid spaces.
 
 <figure class="left">
-  <img src="/assets/blog/jobs_rook_polynomials/john_with_others_revisited.svg" />
+  <img src="/assets/blog/jobs_rooks_polynomials/john_with_others_revisited.svg" />
   <figcaption>
     \(B\) rearranged
   </figcaption>
@@ -184,7 +184,7 @@ By non-interacting, I mean that a rook placement on either of these smaller boar
 We will call these sub-boards $$B_1$$ and $$B_2$$.
 
 <figure class="centered">
-  <img src="/assets/blog/jobs_rook_polynomials/subboards_highlighted.svg" />
+  <img src="/assets/blog/jobs_rooks_polynomials/subboards_highlighted.svg" />
   <figcaption>
     \(B_1\) in red, \(B_2\) in blue
   </figcaption>
@@ -194,7 +194,7 @@ It is much easier to count rooks on these smaller boards, and the non-interactio
 For now, we will not worry about the two squares lying outside of these two subboards, and will simply use the larger board $$B^{\,\prime}$$ for many of the counts here.
 
 <figure class="centered">
-  <img src="/assets/blog/jobs_rook_polynomials/b_prime.svg" />
+  <img src="/assets/blog/jobs_rooks_polynomials/b_prime.svg" />
   <figcaption>
     The board \(B^{\,\prime}\)
   </figcaption>
@@ -249,7 +249,7 @@ We will eliminate those outlying squares by investingating two disjoint cases: w
 First, we will eliminate the top right outlying square in $$B$$, highlighted below.
 
 <figure class="centered">
-  <img src="/assets/blog/jobs_rook_polynomials/square_highlighted.svg" />
+  <img src="/assets/blog/jobs_rooks_polynomials/square_highlighted.svg" />
   <figcaption>
     We will work to eliminate the square highlighted in red
   </figcaption>
@@ -261,13 +261,13 @@ If the square *does* contain a rook, then we must darken both it, and its row an
 
 <div class="centered" style="display:flex !important; flex-wrap: wrap">
   <figure>
-    <img src="/assets/blog/jobs_rook_polynomials/b_without.svg" />
+    <img src="/assets/blog/jobs_rooks_polynomials/b_without.svg" />
     <figcaption>
       Board without rook placed, \(B^\circ\)
     </figcaption>
   </figure>
   <figure>
-    <img src="/assets/blog/jobs_rook_polynomials/b_with.svg" />
+    <img src="/assets/blog/jobs_rooks_polynomials/b_with.svg" />
     <figcaption>
       Board with rook placed, \(B^\bullet\)
     </figcaption>
@@ -294,19 +294,19 @@ We are now equipped with all of the tools that we need to construct the polynomi
 
 <div class="centered" style="display:flex !important; flex-wrap: wrap">
   <figure>
-    <img src="/assets/blog/jobs_rook_polynomials/b_1.svg" />
+    <img src="/assets/blog/jobs_rooks_polynomials/b_1.svg" />
     <figcaption>
       \(R(B_1, x) = 1 + 4x + 2x^2\)
     </figcaption>
   </figure>
   <figure>
-    <img src="/assets/blog/jobs_rook_polynomials/b_2.svg" />
+    <img src="/assets/blog/jobs_rooks_polynomials/b_2.svg" />
     <figcaption>
       \(R(B_2, x) = 1 + 5x + 4x^2\)
     </figcaption>
   </figure>
   <figure>
-    <img src="/assets/blog/jobs_rook_polynomials/b_without_without.svg" />
+    <img src="/assets/blog/jobs_rooks_polynomials/b_without_without.svg" />
     <figcaption>
       $$
         \begin{align*}
@@ -317,13 +317,13 @@ We are now equipped with all of the tools that we need to construct the polynomi
     </figcaption>
   </figure>
   <figure>
-    <img src="/assets/blog/jobs_rook_polynomials/b_without_with.svg" />
+    <img src="/assets/blog/jobs_rooks_polynomials/b_without_with.svg" />
     <figcaption>
       \(R(B^{\circ\bullet}, x) = 1 + 5x + 7x^2 + 2x^3\)
     </figcaption>
   </figure>
   <figure>
-    <img src="/assets/blog/jobs_rook_polynomials/b_without.svg" />
+    <img src="/assets/blog/jobs_rooks_polynomials/b_without.svg" />
     <figcaption>
       $$
         \begin{align*}
@@ -334,13 +334,13 @@ We are now equipped with all of the tools that we need to construct the polynomi
     </figcaption>
   </figure>
   <figure>
-    <img src="/assets/blog/jobs_rook_polynomials/b_with.svg" />
+    <img src="/assets/blog/jobs_rooks_polynomials/b_with.svg" />
     <figcaption>
       \(R(B^\bullet, x) = 1 + 5x + 6x^2 + x^3\)
     </figcaption>
   </figure>
   <figure>
-    <img src="/assets/blog/jobs_rook_polynomials/b.svg" />
+    <img src="/assets/blog/jobs_rooks_polynomials/b.svg" />
     <figcaption>
       $$
         \begin{align*}
@@ -384,13 +384,13 @@ The sum of all these counts will be $$N_h$$.
 <figure class="centered">
   <div class="centered" style="display:flex !important; flex-wrap: wrap">
     <figure>
-      <img src="/assets/blog/jobs_rook_polynomials/john_hired_1.svg" />
+      <img src="/assets/blog/jobs_rooks_polynomials/john_hired_1.svg" />
     </figure>
     <figure>
-      <img src="/assets/blog/jobs_rook_polynomials/john_hired_2.svg" />
+      <img src="/assets/blog/jobs_rooks_polynomials/john_hired_2.svg" />
     </figure>
     <figure>
-      <img src="/assets/blog/jobs_rook_polynomials/john_hired_3.svg" />
+      <img src="/assets/blog/jobs_rooks_polynomials/john_hired_3.svg" />
     </figure>
   </div>
   <figcaption>
