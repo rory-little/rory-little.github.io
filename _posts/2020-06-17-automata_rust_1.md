@@ -1,6 +1,7 @@
 ---
 title: "Crafting Cellular Automata in Rust (Part 1)"
 layout: blog
+image: true
 ---
 
 In this series, we will explore cellular automata, both in theory and implementation.

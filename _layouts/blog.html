@@ -3,5 +3,5 @@ layout: blog_page
 ---
 
 <h1 class="post-title">{{ page.title }}</h1>
-<img class="header-image" src="{{ 'assets' | relative_url }}{{ page.id }}/header.png">
+{% if page.image %}<img class="header-image" src="{{ 'assets' | relative_url }}{{ page.id }}/header.png">{% endif %}
 {{ content }}

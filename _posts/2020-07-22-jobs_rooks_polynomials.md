@@ -1,6 +1,7 @@
 ---
 title: What are the odds of getting hired? Jobs, chess, and polynomials
 layout: blog
+image: true
 ---
 
 If you are a new graduate like me, there is a good chance that you are having trouble finding a place to start your career.
