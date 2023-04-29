@@ -1,0 +1,76 @@
+.logo {
+  display: flex;
+  min-width: 50px;
+  align-items: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-display: auto;
+  font-family: monospace, monospace;
+
+  img {
+    height: 44px;
+  }
+
+  &__mark {
+    margin-right: 5px;
+  }
+
+  &__text {
+    display: inline-block;
+    width: 2.2ch;
+    font-size: 1.125rem;
+    white-space: nowrap;
+    overflow:hidden;
+    animation: typing-base 0.15s steps(1);
+  }
+
+  &__text::after {
+    content: 'w';
+  }
+
+
+  &:hover > &__text::after {
+    content: 'e home.md';
+  }
+
+  &:hover > &__text {
+    width: 10.9ch;
+    animation: typing-hover 0.3s steps(9);
+  }
+
+
+  &__cursor {
+    display: inline-block;
+    width: 10px;
+    height: 1rem;
+    background: #fe5186;
+    margin-left: 5px;
+    border-radius: 1px;
+    animation: cursor 1s infinite;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    &__cursor {
+        animation: none;
+    }
+  }
+
+}
+
+@keyframes typing-base {
+  from {
+    width: 1ch
+  }
+}
+
+@keyframes typing-hover {
+  from {
+    width: 1ch
+  }
+}
+
+@keyframes cursor {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}

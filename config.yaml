@@ -1,0 +1,129 @@
+baseURL: "https://colonw.dev"
+languageCode: "en-us"
+title: "Rory Little"
+# theme: "hello_friend"
+
+copyright: "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+  highlight:
+    codeFences: true
+    guessSyntax: false
+    style: "monokai"
+
+params:
+  author:
+    name: "Rory Little"
+
+  dateform: "Jan 2, 2006"
+  dateformShort: "Jan 2"
+  dateformNum: "2006-01-02"
+  dateformNumTime: "2006-01-02 15:04"
+
+  # Metadata for document head
+  description: ""
+  keywords: ""
+  images: []
+
+  # Home subtitle of the index page.
+  homeSubtitle: "Graduate Student | Computer Vision Researcher"
+
+  # Set a background for the homepage
+  #backgroundImage: "assets/images/background.jpg"
+
+  # Prefix of link to the git commit detail page. GitInfo must be enabled.
+  #
+  #gitUrl: ""
+  
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  #
+  disableReadOtherPosts: false
+
+  # Enable theme toggle
+  # 
+  # This options enables the theme toggle for the theme. 
+  # Per default, this option is off. 
+  # The theme is respecting the prefers-color-scheme of the operating systeme. 
+  # With this option on, the page user is able to set the scheme he wants. 
+  enableThemeToggle: true
+
+  # Sharing buttons
+  #
+  # There are a lot of buttons preconfigured. If you want to change them,
+  # generate the buttons here: https://sharingbuttons.io
+  # and add them into your own `layouts/partials/sharing-buttons.html`
+  enableSharingButtons: false
+
+  # Global language menu
+  #
+  # Enables the global language menu.
+  enableGlobalLanguageMenu: false
+
+  # Integrate Javascript files or stylesheets by adding the url to the external assets or by
+  # linking local files with their path relative to the static folder, e.g. "css/styles.css"
+  customCSS: []
+  customJS: []
+
+  footer:
+    trademark: true
+    rss: false
+    copyright: false
+    author: true
+
+    topText: []
+    bottomText:
+      - "Powered by <a href='http://gohugo.io'>Hugo</a>"
+      - "Theme modified from <a href='https://github.com/rhazdon/hugo-theme-hello-friend-ng'>hello-friend-ng</a>"
+
+  favicon:
+    color:
+      mask: "#1b1c1d"
+      msapplication: "#1b1c1d"
+      theme: "#1b1c1d"
+
+  logo:
+    logoMark: " "
+    logoText: ":"
+    logoHomeLink: "/"
+    # Set true to remove the logo cursor entirely.
+    logoCursorDisabled: false
+    # Set to a valid CSS color to change the cursor in the logo.
+    logoCursorColor: "#66d9ef"
+    # Set to a valid CSS time value to change the animation duration, "0s" to disable.
+    logoCursorAnimate: "1.3s"
+    # Append the current url pathname to logoText 
+    logoCursorPathname: false
+
+  # Uncomment this if you want a portrait on your start page
+  #
+  # [params.portrait]
+  #   path     = "/img/image.jpg"
+  #   alt      = "Portrait"
+  #   maxWidth = "50px"
+  social:
+    - name: "github"
+      url: "https://github.com/rory-little"
+    - name: "linkedin"
+      url: "https://www.linkedin.com/in/rorylittle"
+    #- name: "soundcloud"
+    #  url: "https://discord.gg"
+
+menu:
+  main:
+    - identifier: "about"
+      name: "About"
+      url: "about/"
+    - identifier: "blog"
+      name: "Blog"
+      url: "posts/"
+
+#languages:
+#  en:
+#    subtitle: "Blog"
+#
+#  de:
+#    subtitle: "Blog"
