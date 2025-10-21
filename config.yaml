@@ -85,19 +85,6 @@ params:
       msapplication: "#1b1c1d"
       theme: "#1b1c1d"
 
-  logo:
-    logoMark: " "
-    logoText: ":"
-    logoHomeLink: "/"
-    # Set true to remove the logo cursor entirely.
-    logoCursorDisabled: false
-    # Set to a valid CSS color to change the cursor in the logo.
-    logoCursorColor: "#66d9ef"
-    # Set to a valid CSS time value to change the animation duration, "0s" to disable.
-    logoCursorAnimate: "1.3s"
-    # Append the current url pathname to logoText 
-    logoCursorPathname: false
-
   # Uncomment this if you want a portrait on your start page
   #
   # [params.portrait]
@@ -109,21 +96,15 @@ params:
       url: "https://github.com/rory-little"
     - name: "linkedin"
       url: "https://www.linkedin.com/in/rorylittle"
-    #- name: "soundcloud"
-    #  url: "https://discord.gg"
 
 menu:
   main:
     - identifier: "about"
       name: "About"
       url: "about/"
-    - identifier: "blog"
-      name: "Blog"
+    - identifier: "cv"
+      name: "CV"
+      url: "cv/"
+    - identifier: "posts"
+      name: "Posts"
       url: "posts/"
-
-#languages:
-#  en:
-#    subtitle: "Blog"
-#
-#  de:
-#    subtitle: "Blog"
