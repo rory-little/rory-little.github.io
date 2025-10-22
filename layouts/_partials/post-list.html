@@ -1,0 +1,11 @@
+<section>
+    {{ $posts := site.RegularPages }}
+    {{ $paginator := .Paginate $posts }}
+    Posts found: {{ len $posts }}
+    {{ range $paginator.Pages }}
+        <div class="posts-group">
+            HELLO
+        </div>
+    {{ end }}
+</section>
+

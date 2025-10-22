@@ -2,8 +2,10 @@
 title: "What are the odds of finding a job? Jobs, chess, and polynomials"
 date: 2023-02-02T00:17:36-08:00
 lastmod: 2025-02-02T00:17:36-08:00
-draft: true
+cover: header.png
 math: true
+tags:
+  - math
 ---
 
 If you are a new graduate like me, there is a good chance that you are having trouble finding a place to start your career.

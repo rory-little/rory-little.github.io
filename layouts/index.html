@@ -1,6 +1,6 @@
 {{ define "main" }}
-    <main aria-role="main">
-        <div>
+    <main aria-role="main" class="post">
+        <div class="portrait">
             {{ if .Site.Params.Portrait.Path }}
                <img src="{{ .Site.Params.Portrait.Path }}" class="circle" alt="{{ .Site.Params.Portrait.Alt }}" style="max-width:{{ .Site.Params.Portrait.MaxWidth }}" />
             {{ end }}
@@ -15,5 +15,40 @@
                 </div>
             {{- end }}
         </div>
+
+        {{ $about := site.GetPage "page" "about.md" }}
+        {{ with $about }}
+            <section>
+                {{ .Content }}
+            </section>
+        {{ end }}
+
+        <section class="posts">
+            <h2>Recent Posts</h1>
+            {{ $posts := where site.RegularPages "Section" "posts" }}
+            {{ $paginator := .Paginate $posts }}
+            {{ range $paginator.Pages.GroupByDate "2006" }}
+                <div class="posts-group">
+                    <div class="post-year">{{ .Key }}</div>
+
+                    <ul class="posts-list">
+                        {{ range .Pages }}
+                            <li class="post-item">
+                                <a href="{{.Permalink}}">
+                                    <span class="post-title">{{.Title}}</span>
+                                    <span class="post-day">
+                                        {{ if .Site.Params.dateformShort }}
+                                            {{ .Date.Format .Site.Params.dateformShort }}
+                                        {{ else }}
+                                            {{ .Date.Format "Jan 2"}}
+                                        {{ end }}
+                                    </span>
+                                </a>
+                            </li>
+                        {{ end }}
+                    </ul>
+                </div>
+            {{ end }}
+        </section>
     </main>
 {{ end }}

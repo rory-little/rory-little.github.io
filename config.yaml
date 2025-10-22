@@ -1,7 +1,6 @@
-baseURL: "https://colonw.dev"
+baseURL: "https://www.roryl.dev"
 languageCode: "en-us"
 title: "Rory Little"
-# theme: "hello_friend"
 
 copyright: "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
 
@@ -30,14 +29,7 @@ params:
   images: []
 
   # Home subtitle of the index page.
-  homeSubtitle: "Graduate Student | Computer Vision Researcher"
-
-  # Set a background for the homepage
-  #backgroundImage: "assets/images/background.jpg"
-
-  # Prefix of link to the git commit detail page. GitInfo must be enabled.
-  #
-  #gitUrl: ""
+  homeSubtitle: "Software Engineer"
   
   # Set disableReadOtherPosts to true in order to hide the links to other posts.
   #
@@ -85,12 +77,11 @@ params:
       msapplication: "#1b1c1d"
       theme: "#1b1c1d"
 
-  # Uncomment this if you want a portrait on your start page
-  #
-  # [params.portrait]
-  #   path     = "/img/image.jpg"
-  #   alt      = "Portrait"
-  #   maxWidth = "50px"
+  portrait:
+    path: "about/portrait.png"
+    alt: "Portrait"
+    maxWidth: "50%"
+
   social:
     - name: "github"
       url: "https://github.com/rory-little"

@@ -172,6 +172,12 @@
   }
 }
 
+.post-cover {
+  img {
+    max-width: 80%;
+  }
+}
+
 .button {
   position: relative;
   display: inline-flex;

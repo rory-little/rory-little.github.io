@@ -1,14 +1,14 @@
 ---
-title: "Automata_rust_1"
+title: "Crafting Cellular Automata in Rust"
 date: 2023-02-23T13:55:07-08:00
-draft: true
-toc: false
-images:
+lastmod: 2025-10-22T00:00:51-08:00
+cover: images/header.png
 tags:
-  - untagged
+  - rust
+  - coding
 ---
 
-In this series, we will explore cellular automata, both in theory and implementation.
+In this post, we will explore cellular automata, both in theory and implementation.
 We will begin by building a simple automaton in Rust, and then later iterate on that design in subsequent posts.
 In the process, we will discuss various aspects of cellular automata, and how we might generalize our implementation to any automaton.
 
@@ -427,6 +427,8 @@ If we wanted to use an automaton to generate the forest before simulating a fire
 There are several ways that automata can be sped up, but our approach is too abstracted to make much use of them.
 
 We will explore an approach that tries to address these issues in the [next post]().
+
+*2025 Note: The next post in this series never was written. Oops.*
 
 ---
 
