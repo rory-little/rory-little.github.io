@@ -159,37 +159,9 @@ img {
 figure {
   display: table;
   max-width: 100%;
-  margin: 25px 0;
+  padding: 25px 0px;
+  margin: 0px;
   text-align: center;
-
-  &.left {
-    margin-right: auto;
-  }
-
-  &.left-floated {
-    margin-right: auto;
-    float: left;
-    img {
-      margin: 20px 20px 20px 0;
-    }
-  }
-
-  &.center {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  &.right {
-    margin-left: auto;
-  }
-
-  &.right-floated {
-    margin-left: auto;
-    float: right;
-    img {
-      margin: 20px 0 20px 20px;
-    }
-  }
 
   &.rounded {
     img {
@@ -401,7 +373,6 @@ hr {
 }
 
 .portrait {
-  float: left;
   width: 400px;
   padding: 20px;
   text-align: center;
@@ -468,5 +439,36 @@ hr {
 // Prism JS Additionals
 .highlight {
   margin: 30px auto;
+}
+
+.left {
+  margin-right: auto;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.right {
+  margin-left: auto;
+}
+
+.right-floated {
+  margin-left: auto;
+  float: right;
+  @media #{$media-size-phone} {
+    margin-right: auto;
+    float: none;
+  }
+}
+
+.left-floated {
+  margin-right: auto;
+  float: left;
+  @media #{$media-size-phone} {
+    margin-left: auto;
+    float: none;
+  }
 }
 
