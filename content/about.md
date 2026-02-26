@@ -1,6 +1,6 @@
 Hi, I'm Rory.
 
-I am a software engineer at [Candela Technologies](www.candelatech.com).
+I am a software engineer at [Candela Technologies](https://www.candelatech.com).
 My little slice of the development pie there focuses on core LANforge technologies, and these days I tend to be very wireless-driver focused.
 You can find some of my work for this among the open source [CT kernels](https://github.com/greearb?tab=repositories&q=linux-ct-).
 

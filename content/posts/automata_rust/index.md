@@ -432,7 +432,7 @@ We will explore an approach that tries to address these issues in the [next post
 
 ---
 
-All code in this post may be found [on GitHub](https://gist.github.com/OneOrTen/3dbf582bfb6c77e4b72ce3c670369063).
+All code in this post may be found [on GitHub](https://gist.github.com/rory-little/3dbf582bfb6c77e4b72ce3c670369063).
 Thank you for reading!
 
 
