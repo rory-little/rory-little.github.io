@@ -1,7 +1,7 @@
 ---
 title: "Europe Trip 2026: Week 1"
 date: 2026-02-28T12:20:52+01:00
-draft: true
+draft: false
 toc: false
 images:
 tags:
