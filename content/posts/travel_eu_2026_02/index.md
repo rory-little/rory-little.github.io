@@ -1,5 +1,5 @@
 ---
-title: "Travel_eu_2026_02"
+title: "Europe Trip 2026: Week 2"
 date: 2026-03-06T13:51:17+01:00
 draft: false
 toc: false
