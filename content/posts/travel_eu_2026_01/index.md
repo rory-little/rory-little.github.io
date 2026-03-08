@@ -10,7 +10,7 @@ tags:
 
 Today marks the end of the first week of my four week trip to Europe.
 
-# The Journey
+# The Journey - Day 0
 
 <figure class="center">
     <img src="images/journey_portrait.jpg" />
@@ -36,7 +36,7 @@ What I thought would be a nice period of relaxation after a flight was actually 
 Heahthrow is a very busy airport, and the plethora of people coming and going meant it was almost impossible to find a good spot to rest.
 I was very grateful when my flight to Basel finally was able to depart, albeit delayed by an hour.
 
-# Basel
+# Basel - Day 1
 
 <figure class="center">
     <img src="images/basel_portrait.jpg" />
@@ -66,7 +66,7 @@ I enjoyed an early run along the Rhine, before packing my bags and heading back 
 I am a bit sad that I did not spend more time in Basel, but my wallet might disagree - that coffee and book from earlier cost me nearly fifty dollars!
 Switzerland is very expensive.
 
-# Freiburg im Breisgau
+# Freiburg - Day 2
 
 <figure class="center">
     <img src="images/freiburg_portrait.jpg" />
@@ -103,7 +103,9 @@ Savannah met me at the train station, and together we took a tram to the Altstad
 However, as may be expected, the sleep debt that I had encurred hit me all at once, and so we went back to her apartment so that I could finally catch up sleep.
 After sleeping the full afternoon, and night, only waking for dinner in the evening, I finally was over my jetlag.
 
-The next day, I awake early to a see that a cool mist had settled throughout the city.
+# Freiburg - Day 3
+
+The next day, I awoke early to a see that a cool mist had settled throughout the city.
 Savannah showed me around the university where she was studying, and more of the city.
 We walked from Mooswald, through Mitte, and again ate lunch in the Altstadt.
 We then met with a few of her university friends to play board games until it was dark.
@@ -120,6 +122,8 @@ I didn't quite understand just how hot it could get, even in the middle of winte
         Stauinsland
     </figcaption>
 </figure>
+
+# Freiburg - Day 4/5
 
 On Thursday, we left the city to venture towards Stauinsland, one of the large hills near the city, marking the beginning of the Alps.
 Getting there was quite easy, just a tram, a quick transfer to a bus, and finally a gondola up the hill.
@@ -141,7 +145,7 @@ After that, we ran a few errands, and before we knew it, the day was over!
 My final full day in Freiburg was a mostly battery-recharging day, and preparation for the next phase of the trip.
 I did not go far out of Mooswald, just walking around the trails in the immediate area.
 
-# Onwards
+# Train to Copenhagen - Day 6 (start)
 
 Today, Savannah and I left Freiburg for Copenhagen.
 I am writing this from the Deutsche Bahn as we approach Hamburg for a transfer.
